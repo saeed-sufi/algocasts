@@ -20,11 +20,11 @@ test('"greetings" is not a palindrome', () => {
   expect(palindrome('greetings')).toBeFalsy();
 });
 
-test('"1000000001" a palindrome', () => {
+test('"10000     ,, 00001" a palindrome', () => {
   expect(palindrome('1000000001')).toBeTruthy();
 });
 
-test('"Fish hsif" is not a palindrome', () => {
+test('"Fish    hsif" is not a palindrome', () => {
   expect(palindrome('Fish hsif')).toBeFalsy();
 });
 
