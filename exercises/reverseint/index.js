@@ -10,17 +10,10 @@
 
 function reverseInt(n) {
   
-  const str = n.toString()
-  let strArr = str.split('')
+  let reversedInt = n.toString().split('').reverse().join('')
 
-  const newArr = []
-  for (let i of strArr) {
-    if (i !== "-" & i !== "+") {
-      newArr.push(i)      
-    }
-  }
-  
-  return newArr.reverse().join('');
+
+  return parseInt(reversedInt) * Math.sign(n)
 }
 
 console.log(reverseInt(-132))
